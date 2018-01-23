@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"> <!--<![endif]-->
+
+<head>
+    
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>Kurorti</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+   
+   	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <meta name="format-detection" content="telephone=no" /> 
+    
+    <!-- Favicons
+  ================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CSS
+  ================================================== -->    
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/mediaqueries.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]><link href="css/ie_style.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <link href="css/fixes.css" rel="stylesheet" type="text/css" />    
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	
+    <!-- JS
+  ================================================== -->
+	 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+	<script src="js/jquery.bpopup.min.js"></script>
+	<script src="js/jquery.ui-slider.js"></script>
+	
+</head>
+
+
+<body>
+	<div class="layout">
+    	
+    	<header>
+			<div class="top_part">
+				<div class="limit">
+					<div class="menu">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Партнёрам</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Предложения</a></li>
+						</ul>
+					</div>
+					<div class="contakt_info">
+						<ul>
+							<li>
+								<span class="fa fa-envelope" aria-hidden="true"></span> E-Mail: <a href="mailto:info@mail.ru ">info@mail.ru</a></li>
+							<li>
+								<span class="fa fa-map-pointer" aria-hidden="true"></span>
+								г.Москва, Нижний Кисловский переулок 7, стр. 1, оф. 216
+							</li>
+						</ul>
+					</div>
+					<div style = "clear: both"></div>
+				</div>
+				
+			</div>
+			<div class="head">
+				<div class="limit">
+					<a href="index.html" class="logo">
+					</a>
+						<form >
+							<span class="fa fa-map-marker" aria-hidden="true"></span> Выберите ваш город из списка
+							<span class="arrows"><img src="images/arrows.png"></span>
+							<input type="text" placeholder="Москва, Россия">
+						</form>
+						<div class="kabinet">
+							<span class="fa fa-expeditedssl" aria-hidden="true"></span>
+							<a href="#modal_form" class="privat modal_button">ЛИЧНЫЙ КАБИНЕТ</a>
+						</div>
+						<div class="call_number">
+							<div class="phone_logo"><img src="images/phone.png"></div>8 800 250 84 54
+							<span>Звонок бесплатный</span>
+						</div>
+				</div>
+			</div>
+        </header>
+		<!-- ===================================== SLIDER ================================================================ -->
+		<div class="slider_container">		
+			<ul class="bxslider">
+				<li><img src="images/s1.jpg" /></li>
+				<li><img src="images/s2.jpg" /></li>
+			</ul>
+		</div>
+		<!-- ===================================== MENU ================================================================ -->
+	   <div class="menuitem">
+			<div class="limit">
+				<!--
+				<div class="punkti">
+					<div class="rubrika1"></div>
+					<div class="rubrika2"></div>
+					<div class="rubrika3"></div>
+					<div class="rubrika4"></div>
+					<div class="rubrika5"></div>
+				</div>
+				-->
+				<form>
+					<div class="checkbox detskiy">
+						<input name="rubrika " value="" type="checkbox">
+						<div class="false_checkbox"></div>
+						<div class="text"><span>Детский</span></div>	
+					</div>
+					<div class="checkbox semeyniy">
+						<input name="rubrika" value="" type="checkbox">
+						<div class="false_checkbox"></div>
+						<div class="text"><span>Семейный</span></div>	
+					</div>
+					<div class="checkbox corporate">
+						<input name="rubrika" value="" type="checkbox">
+						<div class="false_checkbox"></div>
+						<div class="text"><span>Корпоративный</span></div>	
+					</div>
+					<div class="checkbox ekskurs">
+						<input name="rubrika" value="" type="checkbox">
+						<div class="false_checkbox"></div>
+						<div class="text"><span>Экскурсионный</span></div>	
+					</div>
+					<div class="checkbox kurort">
+						<input name="rubrika" value="" type="checkbox">
+						<div class="false_checkbox"></div>
+						<div class="text"><span>Санаторно-курортный</span></div>	
+					</div>
+				</form>
+			</div>
+		</div>
+	   <!-- ===================================== FILTER ================================================================ -->
+	   <div class="filter">
+        <div class="limit">
+            <form>
+				<div class="control_point">
+					<div class="lable">Цена за день:</div>
+					<div class="input_container">
+						<input type="text" id="minCost" value=""/>
+						<span>-</span>
+						<input type="text" id="maxCost" value=""/>
+						<div id="slider"></div>
+					</div>
+				</div>
+				<div class="control_point">
+					<div class="lable">Место</div>
+					<div class="combo">
+						<div class="current">КавМинВоды</div>
+						<div class="region_pic"></div>	
+						<div class="arrow"></div>
+									<ul>
+										<div class="scrollbar2">
+										<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+											<div class="viewport">
+												<div class="overview">
+													<li>Кисловодск</li>
+													<li>Есеньуки</li>
+													<li>Железноводск</li>
+													<li>Пятигорск</li>
+													<div class="head">Краснодарский край</div>
+													<li>Анапа</li>
+													<li>Геленджик</li>
+													<li>Красная поляна</li>
+													<li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+                                                    <li> #### </li>
+												</div>
+											</div>
+										</div>
+									</ul>
+						<input type="text" value=" " />
+					</div>
+				</div>
+				<div class="control_point">
+					<div class="lable">Уровень санатория:</div>
+					<div class="combo">
+						<div class="current">Не важно</div>
+						<div class="region_pic"></div>	
+						<div class="arrow"></div>
+									<ul>
+										<li>Высокий</li>
+										<li>Средний</li>
+										<li>Эконом</li>
+									</ul>
+						<input type="text" value=" " />
+					</div>
+				</div>
+				<div class="control_point">
+					<div class="lable">Доп. Параметры</div>
+					<div class="more_button" id="parametr"></div>
+					<div class="lable">Профиль  Заболевания</div>
+					<div class="more_button" id="prof"></div>
+				</div>
+				<div class="control_point">
+					<div class="lable">Рейтинг:</div>
+					<div class="combo">
+						<div class="current">Не важно</div>
+						<div class="region_pic"></div>	
+						<div class="arrow"></div>
+									<ul>
+										<li>от 1</li>
+										<li>от 2</li>
+										<li>от 3</li>
+										<li>от 4</li>
+										<li>5</li>
+									</ul>
+						<input type="text" value=" " />
+					</div>
+				</div>
+				<div class="control_point">
+					<div class="map_button" id="show_map">
+						Смотреть <br>на карте
+					</div>
+					<div class="find">Найти</div>
+				</div>
+				<div class="down_block" id="dop_block">
+						<div class="close cross"></div>
+						<div class="head">Дополнительные Параметры</div>
+						<div class="check_container">
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Парикмахерская
+										<div class="ico">
+												<img src="images/ico/scissors_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Бассейн
+										<div class="ico">
+												<img src="images/ico/bassein_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Тенисный корт
+										<div class="ico">
+												<img src="images/ico/tennis_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Спортплощадка
+										<div class="ico">
+												<img src="images/ico/sportarea_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Парковка
+										<div class="ico">
+												<img src="images/ico/stoyanka_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Wi-Fi Интернет
+										<div class="ico">
+												<img src="images/ico/wifi_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Семейный отдых
+										<div class="ico">
+												<img src="images/ico/familyrest_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Детская площадка
+										<div class="ico">
+												<img src="images/ico/detsk_ploshadka_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Детская комната
+										<div class="ico">
+												<img src="images/ico/detsk_room_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Возле моря
+										<div class="ico">
+												<img src="images/ico/sea_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Телевизор
+										<div class="ico">
+												<img src="images/ico/tv_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->						
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Шведский стол
+										<div class="ico">
+												<img src="images/ico/stol_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Ванна
+										<div class="ico">
+												<img src="images/ico/bathtub_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Питьевой бювет
+										<div class="ico">
+												<img src="images/ico/glass_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Банкомат
+										<div class="ico">
+												<img src="images/ico/bankomat_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="dop" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Пляж
+										<div class="ico">
+												<img src="images/ico/plyage_ico.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+						</div>
+						<div class="ok_button close">
+							OK
+						</div>
+				</div>
+				<div class="down_block" id="profil">
+						<div class="close cross"></div>
+						<div class="head"> Профиль  Заболевания</div>
+						<div class="check_container">
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+							<div class="checkbox">
+								<input name="prof" value="" type="checkbox">
+								<div class="in_check">
+									<div class="false_checkbox"></div>
+									<div class="text">Аллергические</div>
+										<div class="ask">?
+											<div class="help">
+												Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования заболеваний, Наименования.
+											</div>
+										</div>
+								</div>
+							</div>
+							<br>						
+							<!-- ///////////////////////////////////////////////////////////////////////////// -->
+						</div>
+						<div class="ok_button close">
+							OK
+						</div>
+				</div>
+				<div class="map_block">
+					<iframe src="https://api-maps.yandex.ua/frame/v1/-/C6U4e-LE" width="100%" height="400" frameborder="0"></iframe>
+				</div>
+			</form>
+        </div>
+       </div>
+	   
+		<!-- ===================================== CONTENT BLOCK ================================================================ -->
+							<!-- ==================== SIDEBAR ===================== -->
+		<div class="content">
+			<div class="limit">
+				<div class="sidebar">
+					<div class="predlogeniya">
+						<span>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							ПРЕДЛОЖЕНИЯ В:
+						</span>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point active">
+								<div class="mark">КавМинВоды</div>
+								<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Кисловодск
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Пансионаты</a></li>
+											<li><a href="#">Отели</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Ессентуки
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Пансионаты</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Железноводск
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Пятигорск
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Пансионаты</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point ">
+								<div class="mark">Краснодарский край</div>
+								<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Анапа
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Пансионаты</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Геленджик
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Пансионаты</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Красная поляна
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Виллы и коттеджи</a></li>
+											<li><a href="#">Отели</a></li>
+											<li><a href="#">Пансионаты</a></li>
+											<li><a href="#">Турбазы</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Сочи
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Отели</a></li>
+											<li><a href="#">Пансионаты</a></li>
+										</ul>
+									</div>
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Туапсе
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+											<li><a href="#">Гостиницы</a></li>
+											<li><a href="#">Пансионаты</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point">
+								<div class="mark">Крым</div>
+								<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Анапа
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point">
+								<div class="mark">Абхазия</div>
+								<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Анапа
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point">
+								<div class="mark">Белоруссия</div>
+								<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Анапа
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point">
+								<div class="mark">Подмосковье</div>
+								<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Анапа
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="list1">
+						<ul>
+							<li class="point">
+								<div class="mark">Северный Кавказ</div>
+							<div class="downlist">
+									<div class="listname"><span class="fa fa-map-marker" aria-hidden="true"></span> Анапа
+										<ul class="sublist">
+											<li><a href="#">Санатории</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+<!-- ===================================== CONTENT ================================================================ -->				
+				
+				<div class="content_block">
+					
+						<div class="sort_menu">
+							<div class="predlogeniya">
+								<span>
+									<i  class="fa fa-thumbs-up" aria-hidden="true"></i>
+									ЛУЧШИЕ ПРЕДЛОЖЕНИЯ
+								</span>
+							</div>
+							<div class="sortirovka">
+									<ul>
+										<li>
+											Сортировать по:
+										</li>
+										<li>
+											<a class="sort active"  href="#" >
+												Рейтингу
+												<span class="fa fa-sort" aria-hidden="true"></span>
+											</a>
+										</li>
+										<li>
+											<a class="sort"  href="#" >
+												Цене
+												<span class="fa fa-sort" aria-hidden="true"></span>
+											</a>
+										</li>
+										<li>
+											<a  class="sort" href="#" >
+												Алфавиту
+												<span class="fa fa-sort" aria-hidden="true"></span>
+											</a>
+										</li>
+									</ul>
+									
+							</div>
+						</div>
+					<div class="content_cards">
+						<div class="places_ico">
+							<img src="images/cont_img1.png" alt="">
+						</div>	
+						<div class="opisanie">
+							<div class="name">
+								<a href="#" >Пансионат «ГОЛУБАЯ ВОЛНА»</a>
+								<span>Санаторий в городе Алушта</span>
+							</div>	
+							<ul>
+								<li>Рейтинг: 4.83</li>
+								<li>Отзывы (11)</li>
+								<li>Акции (0)</li>
+							</ul>
+							<div class="more">
+								<span class="fa fa-eye" aria-hidden="true"></span>
+								<a href="#" >Смотреть подробно</a>
+							</div> 
+							
+						</div>
+						<div class="uslugi">
+							<ul>
+								<li><img src="images/sea_ico.png" /></li>
+								<li><img src="images/plyage_ico.png" /></li>
+								<li><img src="images/wifi_ico.png" /></li>
+								<li><img src="images/bankomat_ico.png" /></li>
+								<li><img src="images/stoyanka_ico.png" /></li>
+								<li><img src="images/dinner_ico.png" /></li>
+								<li><img src="images/bassein_ico.png" /></li>
+								<li><img src="images/bathtub_ico.png" /></li>
+								<li><img src="images/glass_ico.png" /></li>
+							</ul>
+						</div>
+						<div class="zakaz">
+							<div class="rating III">    <!-- класс I, II, III, IV, V - добавляет звезды -->
+							</div>
+							<div class="price">
+									Цена от <span class="summa">6253</span> руб.
+							</div>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+						
+						<div style="clear: both"></div>		
+				    </div>
+					
+					<div class="content_cards">
+						<div class="places_ico">
+							<img src="images/cont_img1.png" alt="">
+						</div>	
+						<div class="opisanie">
+							<div class="name">
+								<a href="#" >Пансионат «ГОЛУБАЯ ВОЛНА»</a>
+								<span>Санаторий в городе Алушта</span>
+							</div>	
+							<ul>
+								<li>Рейтинг: 4.83</li>
+								<li>Отзывы (11)</li>
+								<li>Акции (0)</li>
+							</ul>
+							<div class="more">
+								<span class="fa fa-eye" aria-hidden="true"></span>
+								<a href="#" >Смотреть подробно</a>
+							</div> 
+							
+						</div>
+						<div class="uslugi">
+							<ul>
+								<li><img src="images/sea_ico.png" /></li>
+								<li><img src="images/plyage_ico.png" /></li>
+								<li><img src="images/wifi_ico.png" /></li>
+								<li><img src="images/bankomat_ico.png" /></li>
+								<li><img src="images/stoyanka_ico.png" /></li>
+								<li><img src="images/dinner_ico.png" /></li>
+								<li><img src="images/bassein_ico.png" /></li>
+								<li><img src="images/bathtub_ico.png" /></li>
+								<li><img src="images/glass_ico.png" /></li>
+							</ul>
+						</div>
+						<div class="zakaz">
+							<div class="rating III">    <!-- класс I, II, III, IV, V - добавляет звезды -->
+							</div>
+							<div class="price">
+									Цена от <span class="summa">6253</span> руб.
+							</div>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+						
+						<div style="clear: both"></div>		
+				    </div>
+					
+					<div class="content_cards">
+						<div class="places_ico">
+							<img src="images/cont_img1.png" alt="">
+						</div>	
+						<div class="opisanie">
+							<div class="name">
+								<a href="#" >Пансионат «ГОЛУБАЯ ВОЛНА»</a>
+								<span>Санаторий в городе Алушта</span>
+							</div>	
+							<ul>
+								<li>Рейтинг: 4.83</li>
+								<li>Отзывы (11)</li>
+								<li>Акции (0)</li>
+							</ul>
+							<div class="more">
+								<span class="fa fa-eye" aria-hidden="true"></span>
+								<a href="#" >Смотреть подробно</a>
+							</div> 
+							
+						</div>
+						<div class="uslugi">
+							<ul>
+								<li><img src="images/sea_ico.png" /></li>
+								<li><img src="images/plyage_ico.png" /></li>
+								<li><img src="images/wifi_ico.png" /></li>
+								<li><img src="images/bankomat_ico.png" /></li>
+								<li><img src="images/stoyanka_ico.png" /></li>
+								<li><img src="images/dinner_ico.png" /></li>
+								<li><img src="images/bassein_ico.png" /></li>
+								<li><img src="images/bathtub_ico.png" /></li>
+								<li><img src="images/glass_ico.png" /></li>
+							</ul>
+						</div>
+						<div class="zakaz">
+							<div class="rating III">    <!-- класс I, II, III, IV, V - добавляет звезды -->
+							</div>
+							<div class="price">
+									Цена от <span class="summa">6253</span> руб.
+							</div>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+						
+						<div style="clear: both"></div>		
+				    </div>
+					
+					<div class="content_cards">
+						<div class="places_ico">
+							<img src="images/cont_img1.png" alt="">
+						</div>	
+						<div class="opisanie">
+							<div class="name">
+								<a href="#" >Пансионат «ГОЛУБАЯ ВОЛНА»</a>
+								<span>Санаторий в городе Алушта</span>
+							</div>	
+							<ul>
+								<li>Рейтинг: 4.83</li>
+								<li>Отзывы (11)</li>
+								<li>Акции (0)</li>
+							</ul>
+							<div class="more">
+								<span class="fa fa-eye" aria-hidden="true"></span>
+								<a href="#" >Смотреть подробно</a>
+							</div> 
+							
+						</div>
+						<div class="uslugi">
+							<ul>
+								<li><img src="images/sea_ico.png" /></li>
+								<li><img src="images/plyage_ico.png" /></li>
+								<li><img src="images/wifi_ico.png" /></li>
+								<li><img src="images/bankomat_ico.png" /></li>
+								<li><img src="images/stoyanka_ico.png" /></li>
+								<li><img src="images/dinner_ico.png" /></li>
+								<li><img src="images/bassein_ico.png" /></li>
+								<li><img src="images/bathtub_ico.png" /></li>
+								<li><img src="images/glass_ico.png" /></li>
+							</ul>
+						</div>
+						<div class="zakaz">
+							<div class="rating III">    <!-- класс I, II, III, IV, V - добавляет звезды -->
+							</div>
+							<div class="price">
+									Цена от <span class="summa">6253</span> руб.
+							</div>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+						
+						<div style="clear: both"></div>		
+				    </div>
+					
+					<div class="content_cards">
+						<div class="places_ico">
+							<img src="images/cont_img1.png" alt="">
+						</div>	
+						<div class="opisanie">
+							<div class="name">
+								<a href="#" >Пансионат «ГОЛУБАЯ ВОЛНА»</a>
+								<span>Санаторий в городе Алушта</span>
+							</div>	
+							<ul>
+								<li>Рейтинг: 4.83</li>
+								<li>Отзывы (11)</li>
+								<li>Акции (0)</li>
+							</ul>
+							<div class="more">
+								<span class="fa fa-eye" aria-hidden="true"></span>
+								<a href="#" >Смотреть подробно</a>
+							</div> 
+							
+						</div>
+						<div class="uslugi">
+							<ul>
+								<li><img src="images/sea_ico.png" /></li>
+								<li><img src="images/plyage_ico.png" /></li>
+								<li><img src="images/wifi_ico.png" /></li>
+								<li><img src="images/bankomat_ico.png" /></li>
+								<li><img src="images/stoyanka_ico.png" /></li>
+								<li><img src="images/dinner_ico.png" /></li>
+								<li><img src="images/bassein_ico.png" /></li>
+								<li><img src="images/bathtub_ico.png" /></li>
+								<li><img src="images/glass_ico.png" /></li>
+							</ul>
+						</div>
+						<div class="zakaz">
+							<div class="rating III">    <!-- класс I, II, III, IV, V - добавляет звезды -->
+							</div>
+							<div class="price">
+									Цена от <span class="summa">6253</span> руб.
+							</div>
+							<a href="#" class="button">ЗАБРОНИРОВАТЬ</a>
+						</div>
+						
+						<div style="clear: both"></div>		
+				    </div>
+					<div class="pagination_block">
+						<div class="paginator">	
+							<a href="#"><span class="fa fa-play transform" aria-hidden="true"></a>
+							<a href="#">1</a>
+							<a class="active" href="#">2</a>
+							<a href="#">3</a>
+							<span>...</span>
+							<a href="#">8</a>
+							<a href="#">9</a>
+							<a href="#">10</a>
+							<a href="#"><span class="fa fa-play" aria-hidden="true"></span></a>
+						</div>
+					</div>
+					<div style="clear: left"></div>
+				</div>		
+			</div>
+		</div>
+		
+<!------------------------------------------------------------------------------------------------------------- -->				
+<!------------------------------------------------ CONTENT END ------------------------------------------------ -->
+<!------------------------------------------------------------------------------------------------------------- -->			
+		
+		
+				<div class="info">
+					<div class="limit">
+						<a class="logo" href="index.html"></a>
+						<div class="ofirme">
+							<p>Управляющая компания Национальные Курорты с радостью готова предоставить уникальную возможность совместить  оздоровление с полноценным отдыхом. Лучшие курорты солнечного Крыма, гостеприимной Абхазии,  неповторимо-прекрасного Подмосковья и других регионов России с помощью природно-климатических факторов гарантировано обеспечат эффективное оздоровление и высококлассный отдых для всей семьи.
+
+Доброжелательные и  опытные сотрудники успешно развивающейся компании Национальные курорты превратят ваш отдых в незабываемую сказку. Оздоровление и прописанный курс лечения, увлекательный отдых для детей, совместный семейный отдых — все это на лучших курортах нашей страны. Управляющая компания Национальные Курорты с радостью готова предоставить уникальную возможность совместить  оздоровление с полноценным отдыхом. Лучшие курорты солнечного Крыма, гостеприимной Абхазии,  неповторимо-прекрасного Подмосковья и других регионов России с помощью природно-климатических факторов гарантировано обеспечат эффективное оздоровление и высококлассный отдых для всей семьи. Доброжелательные и  опытные сотрудники успешно развивающейся компании Национальные курорты превратят ваш отдых в незабываемую сказку. Оздоровление и прописанный курс лечения, увлекательный отдых для детей, совместный семейный отдых — все это на лучших курортах нашей страны.</p>
+							
+						</div>
+						<div class="line_block I">
+							
+								<div class="predlog">
+										<span><img src="images/fire.png" /> Горячие предложения:</span>
+										
+								</div>
+										<div class="shezlong">
+											<div class="reg">САМЫЕ АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ,<br><span>сезонные скидки и подарочные купоны</span></div>							
+											<div class="form_container">
+												<form>
+													<div class="head_form">ПОЛУЧАЙТЕ ИХ СРАЗУ НА E-MAIL</div>
+														<div class="input_container">
+															<input type="email" placeholder="Ваш E-Mail">
+															<div class="button">Получить <br>первый подарок</div>
+														</div>
+													<div class="text-a-form">
+														Или следите за обновлениями в наших группах в социальных сетях
+													</div>	
+												</form>
+											</div>
+										
+										</div>
+										
+						</div>
+						<div class="line_block II">
+							<div class="priglashenie">
+								<span><img src="images/group_ico.png" /> Присоединяйтесь к нам в:</span>							
+							</div>
+								<div class="soc_seti">
+									<img src="images/ok_img.png" />
+								</div>
+								<div class="soc_seti">
+									<img src="images/fb_img.png" />											
+								</div>
+								<div class="soc_seti">
+									<img src="images/vk_img.png" />
+								</div>
+								<div class="soc_seti">
+									<img src="images/twitter_img.png" />											
+								</div>
+						</div>
+						
+						
+					</div>
+				</div>
+		
+		
+		
+		
+		
+        <!-- FOOTER PUSH -->
+        <div class="footer-push"></div>
+    </div> 
+    
+    
+    <footer>
+    	<div class="limit">
+			<div class="box1"><a href="index.html" class="logo"></a>
+				<div class="nomer"><span class="fa fa-phone" aria-hidden="true"></span>8(800)250 84 54</div>
+			</div>
+			
+			<div class="box2">
+				<div class="text">Управляющая компания  Национальные Курорты<br>125009, Россия, Москва,<br>Нижний Кисловский переулок 7, стр. 1, оф. 216</div>
+				<div class="soc">
+					<ul>
+                        <li>
+							<a href="#" class="fb"></a>
+						</li>
+						 <li>
+							<a href="#" class="vk"></a>
+						</li>
+						 <li>
+							<a href="#" class="ok"></a>
+						</li>
+						 <li>
+							<a href="#" class="twiter"></a>
+						</li>
+						 <li>
+							<a href="#" class="goo"></a>
+						</li>
+						  <li>
+							<a href="#" class="yt"></a>
+						</li>
+						  <li>
+							<a href="#" class="ya"></a>
+						</li>
+						  <li>
+							<a href="#" class="my"></a>
+						</li>
+						  <li>
+							<a href="#" class="note"></a>
+						</li>
+                    </ul>
+				</div>
+			</div>
+			<div class="box3"><a href="index.html" class="logo4new"></a></div>
+			
+			
+        </div>
+    </footer> 
+	<!-- ===================   Modal  ============================ -->
+	<div class="modal" id="modal_form" style="display: none">
+            <a href="#" class="cross close"></a>
+           <div class="modal_tabs">
+				<ul class="tabs__caption">
+					<li class="marker  active">
+						Регистрация
+					</li>
+					<li class="marker">
+						Вход
+					</li>
+				</ul>
+				<div class="tabs__content active">
+					<form>
+						<div class="row">
+							<input name="fio" placeholder="ФИО" type="text">
+						</div>
+						<div class="row1">
+							<input name="phone" placeholder="Ваш Телефон" type="text">
+						</div>
+						<div class="row2">
+							<input name="Email" placeholder="Ваш E-Mail" type="email">
+						</div>
+					</form>
+					<a href="#" class="button">продолжить</a>
+				</div>
+				<div class="tabs__content">
+					<form>
+						<div class="row">
+							<input name="fio" placeholder="ФИО" type="text">
+						</div>
+						<div class="row1">
+							<input name="phone" placeholder="Ваш Телефон" type="text">
+						</div>
+						<div class="row2">
+							<input name="Email" placeholder="Ваш E-Mail" type="email">
+						</div>
+					</form>
+					<a href="#" class="button">продолжить</a>
+				</div>
+		   </div>
+	</div>
+	<!-- ======================================================== -->
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
